@@ -29,5 +29,6 @@
       <a class="btn btn-outline-primary" href="#">Sign up</a> 
     </div>
 
-    <div class="container">    
-    <!-- Main content start -->
+    <div class="main-content">
+      <div class="container">    
+      <!-- Main content start -->

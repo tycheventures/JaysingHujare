@@ -6,3 +6,7 @@
     font-style: normal;
 
 }
+
+body, .main-content{
+    background-color: #f9f4eb;
+}

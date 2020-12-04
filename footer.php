@@ -1,5 +1,6 @@
+        </div>
+        <!-- Main content end -->
     </div>
-    <!-- Main content end -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
