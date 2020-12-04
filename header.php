@@ -1,5 +1,6 @@
 <?php
-$menus = array(
+
+$header_menus = array(
   'header.php' => 'Home' ,
   'deals.php' => 'New Deals' ,
   'current_project.php' => 'Current Projects',
@@ -7,8 +8,20 @@ $menus = array(
   'contact.php' => 'Contact Us',
   'about.php' => 'About Us',
    );
-$current_page = basename($_SERVER['REQUEST_URI']);
 
+
+$menus = array(      
+
+               'home.php' => 'Home',
+               'current_project.php' => 'Current Projects',
+               'Completed_Project.php' => 'Completed Projects',
+               'contact.php' => 'Contact Us',
+               'about.php' => 'About Us'
+
+            
+      );
+
+$current_page = basename( $_SERVER['REQUEST_URI'] );
 ?>
 <!doctype html>
 <html lang="en">
@@ -44,7 +57,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
             <div class="menu-links">
               <ul class="navbar-nav">
 
-                <?php foreach ($menus as $href => $menu) { ?>
+                <?php foreach ($header_menus as $href => $menu) { ?>
 
                 <li class="nav-item active">
                   <a href="<?php echo $href ?>" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == $href ? 'active' : ''); ?> " ><?php echo $menu; ?></a>
