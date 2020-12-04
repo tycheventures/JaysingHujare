@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Zurich CN BT';
-    src: url('zurich-cn-bt-bold-webfont.woff2') format('woff2'),
-         url('zurich-cn-bt-bold-webfont.woff') format('woff');
+    src: url('../fonts/zurich-cn-bt-bold-webfont.woff2') format('woff2'),
+         url('../fonts/zurich-cn-bt-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,4 +9,33 @@
 
 body, .main-content{
     background-color: #f9f4eb;
+}
+
+.header{
+	background-image: url(../img/bg_re.jpg);
+	background-repeat: repeat-x;
+}
+.follow{
+	float: right;
+	text-transform: capitalize;
+	color: #fff;
+	vertical-align: middle;
+	letter-spacing: 0.2px;
+	font-size: 13px;
+	padding-top: 14px;
+	font-family: 'arial';
+}
+.menus{
+	line-height: 3.5rem;
+	text-decoration: none;
+}
+.icon{
+	padding-left: 10px;
+}
+.menu-links a{
+	font-family: 'Zurich CN BT';
+	color: #D1CAB3 !important;
+}
+.collapse{
+	display: fl
 }

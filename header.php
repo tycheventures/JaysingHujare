@@ -1,4 +1,15 @@
+<?php
+$menus = array(
+  'header.php' => 'Home' ,
+  'deals.php' => 'New Deals' ,
+  'current_project.php' => 'Current Projects',
+  'complete_project.php' => 'Completed Projects',
+  'contact.php' => 'Contact Us',
+  'about.php' => 'About Us',
+   );
+$current_page = basename($_SERVER['REQUEST_URI']);
 
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,18 +27,37 @@
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body> 
+    <header class="header">
+      <div class="container">   
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="#"><img src="assets/img/logo.png" class="header"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+            <div class="follow">
+              <span>follow us : </span>
+              <a href="#" class="icon"><img src="assets/img/f-icon.png"></a>
+              <a href="#" class="icon"><img src="assets/img/g+-icon.png"></a>                
+            </div>
+            <div class="menu-links">
+              <ul class="navbar-nav">
 
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white box-shadow">
-      <h1 class="my-0 mr-md-auto font-weight-normal">Company name</h1>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Features</a>
-        <a class="p-2 text-dark" href="#">Enterprise</a>
-        <a class="p-2 text-dark" href="#">Support</a>
-        <a class="p-2 text-dark" href="#">Pricing</a>
-      </nav>
-      <a class="btn btn-outline-primary" href="#">Sign up</a> 
-    </div>
+                <?php foreach ($menus as $href => $menu) { ?>
+
+                <li class="nav-item active">
+                  <a href="<?php echo $href ?>" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == $href ? 'active' : ''); ?> " ><?php echo $menu; ?></a>
+                </li>
+
+                <?php } ?>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
     <div class="main-content">
       <div class="container">    
