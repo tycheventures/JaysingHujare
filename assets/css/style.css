@@ -10,3 +10,56 @@
 body, .main-content{
     background-color: #f9f4eb;
 }
+
+.heading
+{                   /*border-bottom:inset;*/
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 17px;
+    color: #80663a;
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-weight: bold;
+ border-bottom:;
+	border-color: #464835;
+}
+
+.msg-contain{
+	    color: #7f6942;
+		text-align: justify !important;
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ 
+.text-box li a 
+{
+    color: #464835 !important;
+    text-decoration: blink;
+    font-family: 'Zurich Cn BT';
+}
+.text-box li::marker 
+{
+    content:  "›› "; 
+ 	color: #464835;
+  	font-size: small;
+}
+ 
+.readmore
+{
+	color: #464835;
+	float: right;
+}
+
+.name
+{
+	float: right;
+    font-size: 12px;
+    margin: 0;
+    padding: 0 16px;
+	
+}
