@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Zurich CN BT';
+    src: url('zurich-cn-bt-bold-webfont.woff2') format('woff2'),
+         url('zurich-cn-bt-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
