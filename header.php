@@ -1,4 +1,17 @@
+<?php
+$menus = array(      
 
+               'home.php' => 'Home',
+               'current_project.php' => 'Current Projects',
+               'Completed_Project.php' => 'Completed Projects',
+               'contact.php' => 'Contact Us',
+               'about.php' => 'About Us'
+
+            
+      );
+$current_page = basename( $_SERVER['REQUEST_URI'] );
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
