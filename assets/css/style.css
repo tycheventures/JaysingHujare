@@ -6,3 +6,20 @@
     font-style: normal;
 
 }
+
+.swiper-container{
+
+	margin-top:30px ;
+	max-width: 968px;
+	max-height:342px;
+	
+	
+}
+
+
+.swiper-pagination
+{
+    margin-bottom: 280px;
+    margin-left:330px; 
+
+}
