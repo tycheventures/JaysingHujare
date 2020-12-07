@@ -17,7 +17,7 @@
 		<div class="text-box col-sm-4 col-md-4">
 			<h2 class="heading border-bottom">Why us..?</h2>
 				<ul>
-					<li>
+					<li class="userpanel li">
 						<a href="deals.php">New Deals</a>
 					</li>
 					<li>
@@ -36,7 +36,7 @@
 			<div class="text3">
 				<h2 class="heading border-bottom">Testimonial</h2>
 			   
-					<p class="blackquote_para msg-contain">" Human beings, by changing the inner attitudes of their minds, can change the outer aspects of their lives… . "
+					<p class="blackquote_para msg-contain"> Human beings, by changing the inner attitudes of their minds, can change the outer aspects of their lives… . 
 	​
 					</p>
 					<p class=name>– William James</p>
