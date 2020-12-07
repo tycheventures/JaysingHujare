@@ -57,6 +57,7 @@ body, .main-content{
       padding-left: 0px !important;
       padding-right: 0px !important;
 }
+}
 
 .swiper-container{
 
@@ -250,3 +251,10 @@ footer li{
 	padding-top:11px;
 }
 
+@media (max-width: 767px){
+  .copyright_section {
+      
+      padding-left:80px;
+     
+}
+}
