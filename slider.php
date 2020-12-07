@@ -7,7 +7,7 @@
             // var_dump($images);  
 ?>
 
-<div class="container">
+ 
     
         <div class="swiper-container mb-4 shadow" style="border: 10px solid white;">
             <div class="swiper-wrapper ">
@@ -28,12 +28,5 @@
 
         
             </div>
-
-
-
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-       
-
+                <div class="swiper-pagination"></div> 
         </div>
