@@ -30,7 +30,7 @@ body, .main-content{
 .menu-links{
   margin-top: 0.35rem;
 }
-.links{
+.nav-item{
   padding-left: 2.25rem;
   padding-right: 0 !important;
 }
@@ -51,7 +51,7 @@ body, .main-content{
 .icon{
 	padding-left: 10px;
 }
-.menu-links a{
+.nav-item a{
 	font-family: 'Zurich CN BT';
 	color: #D1CAB3 !important;
   font-size: 15px;
@@ -62,7 +62,7 @@ body, .main-content{
   background-image: url('../img/nav-hover.gif');
   background-position: center bottom;
   background-repeat: no-repeat; 
-  color: #fff;
+  color: #fff !important;
   padding-bottom: 22px;
 }
 @media (min-width: 1200px){
@@ -72,6 +72,7 @@ body, .main-content{
       padding-right: 0px !important;
     }
 }
+
 .swiper-container{
 
 	margin-top:30px ;
@@ -264,3 +265,10 @@ footer li{
 	padding-top:11px;
 }
 
+@media (max-width: 767px){
+  .copyright_section {
+      
+      padding-left:80px;
+     
+}
+}
