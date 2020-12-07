@@ -23,10 +23,10 @@ $menus = array(
 
 $current_page = basename( $_SERVER['REQUEST_URI'] );
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -48,39 +48,42 @@ $current_page = basename( $_SERVER['REQUEST_URI'] );
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/slider.js"></script>
-
-  </head>
-
-  <body>
+ </head>
+ <body>
  
-    <header class="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-md navbar-light">
-          <a href="#"><img src="assets/img/logo.png" class="logo"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
-            <div class="ml-auto">
-              <div class="follow">
-                <span>follow us : </span>
-                <a href="#" class="icon"><img src="assets/img/f-icon.png"></a>
-                <a href="#" class="icon"><img src="assets/img/g+-icon.png"></a>                
+ <div class="container">
+ <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+  	<div>
+  		<div style="line-height: 1rem; float: rigt;text-align: right;">
+              <span>follow us : </span>
+              <a href="#" class="icon"><img src="assets/img/f-icon.png"></a>
+              <a href="#" class="icon"><img src="assets/img/g+-icon.png"></a>
+            </div> 
+  	</div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse ml-auto main" id="navbarNav">
+                  <div class="menu-links row">
+              <div class="col">
+                <ul class="navbar-nav">
+
+                  <?php foreach ($header_menus as $href => $menu) { ?>
+
+                  <li class="nav-item active">
+                    <a href="<?php echo $href ?>" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == $href ? 'active' : ''); ?> " ><?php echo $menu; ?></a>
+                  </li>
+
+                  <?php } ?>
+
+                </ul>
               </div>
             </div>
-            <ul class="navbar-nav ml-auto menu-links mb-2 mb-md-0">
-              <?php foreach ($header_menus as $href => $menu) { ?>
-                <li class="nav-item">
-                  <a href="<?php echo $href ?>" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == $href ? 'active' : ''); ?> " ><?php echo $menu; ?></a>
-                </li>
-              <?php } ?> 
-            </ul>
-          </div>
-        </nav>
-      </div> 
-       
-    </header>
+                </div>
+              </nav>
+  </nav>
+</div>
+</div>
 
-    <div class="main-content">
-      <div class="container">    
-      <!-- Main content start -->
+ </body>
+ </html>
