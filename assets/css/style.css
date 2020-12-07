@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Zurich CN BT';
-    src: url('../fonts/zurich-cn-bt-bold-webfont.woff2') format('woff2'),
-         url('../fonts/zurich-cn-bt-bold-webfont.woff') format('woff');
+    src: url('../font/zurich-cn-bt-bold-webfont.woff2') format('woff2'),
+         url('../font/zurich-cn-bt-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -76,7 +76,7 @@ body, .main-content{
 }
 
 .msg-contain{
-	    color: #7f6942;
+	  color: #7f6942;
 		text-align: justify !important;
     font-size: 12px;
     line-height: 18px;
@@ -88,13 +88,14 @@ body, .main-content{
 {
     color: #464835 !important;
     text-decoration: blink;
-    font-family: 'Zurich Cn BT';
+    font-size: 14px;
+    height: 25px;
 }
 .text-box li::marker 
 {
     content:  "›› "; 
- 	color: #464835;
-  	font-size: small;
+    color: #464835;
+    font-size: small;
 }
  
 .readmore
@@ -103,19 +104,54 @@ body, .main-content{
 	float: right;
 }
 
+p.blackquote_para   {
+    text-align: justify !important;
+    padding-left: 30px;
+    padding-right: 25px;
+    position: relative;
+    word-spacing: 0.5px;
+}
+p.blackquote_para:before{
+    content: '';
+    background-image: url('../img/i-commatop.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    right: auto;
+    left: 0px;
+}
+p.blackquote_para:after
+{
+    content: '';
+    background-image: url(../img/i-commabottom.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    right: 0px;
+    left: auto;
+}
+
 .name
 {
 	float: right;
     font-size: 12px;
     margin: 0;
     padding: 0 16px;
+    color: #7f6942;
 }
 
-
+.align
+{
+    margin-top:50px;
+    margin-bottom:12%; 
+ 
+}
 
 .footer-top{
 
-	background-image:url('img/foot-top.png');
+	background-image:url('../img/foot-top.png');
 	background-position:bottom;
 	background-repeat:repeat-x;
 	background-size:cover;
@@ -124,7 +160,7 @@ body, .main-content{
 
 .main_div{
 
-    background-image:url('img/foot_re.gif');
+    background-image:url('../img/foot_re.jpg');
     background-repeat:repeat-x;
     height:50%;
     background-size:cover;
