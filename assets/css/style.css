@@ -44,10 +44,6 @@ body, .main-content
 	flexont-family: 'Zurich CN BT';
 	color: #D1CAB3 !important;
 }
-.collapse
-{
-	display: fl
-}
 
 .swiper-container
 {
@@ -176,9 +172,12 @@ p.blackquote_para:after
     background-size:cover;
   }
 
-.main_div ul
-{
-	padding-top:11px;
+
+.main_div ul{
+
+ padding-top:11px;
+ font-size: 12px;
+
 }
 
 .footer-container
