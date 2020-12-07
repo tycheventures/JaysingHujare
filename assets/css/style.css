@@ -37,9 +37,7 @@ body, .main-content{
 	font-family: 'Zurich CN BT';
 	color: #D1CAB3 !important;
 }
-.collapse{
-	display: fl
-}
+
 
 .swiper-container{
 
@@ -133,6 +131,7 @@ body, .main-content{
 .main_div ul{
 
  padding-top:11px;
+ font-size: 12px;
 
 }
 
