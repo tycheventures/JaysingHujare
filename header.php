@@ -52,19 +52,42 @@ $current_page = basename( $_SERVER['REQUEST_URI'] );
 
   <body> 
     <header class="header">
-      <div class="container">   
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a href="#"><img src="assets/img/logo.png" class="header"></a>
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <a href="#"><img src="assets/img/logo.png" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
+            <div class="ml-auto">
+              <div class="follow">
+                <span>follow us : </span>
+                <a href="#" class="icon"><img src="assets/img/f-icon.png"></a>
+                <a href="#" class="icon"><img src="assets/img/g+-icon.png"></a>                
+              </div>
+            </div>
+            <ul class="navbar-nav ml-auto menu-links mb-2 mb-md-0">
+              <?php foreach ($header_menus as $href => $menu) { ?>
+                <li class="nav-item">
+                  <a href="<?php echo $href ?>" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == $href ? 'active' : ''); ?> " ><?php echo $menu; ?></a>
+                </li>
+              <?php } ?> 
+            </ul>
+          </div>
+        </nav>
+      </div> 
+       <!--  <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="#"><img src="assets/img/logo.png" class="logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse ml-auto" id="navbarNav">
-            <div class="follow">
+          <div class="collapse navbar-collapse ml-auto main" id="navbarNav">
+            <div class="follow ">
               <span>follow us : </span>
               <a href="#" class="icon"><img src="assets/img/f-icon.png"></a>
-              <a href="#" class="icon"><img src="assets/img/g+-icon.png"></a>                
+              <a href="#" class="icon"><img src="assets/img/g+-icon.png"></a>  
             </div>
-            <div class="menu-links">
+            <div class="menu-links ">
               <ul class="navbar-nav">
 
                 <?php foreach ($header_menus as $href => $menu) { ?>
@@ -78,8 +101,7 @@ $current_page = basename( $_SERVER['REQUEST_URI'] );
               </ul>
             </div>
           </div>
-        </nav>
-      </div>
+        </nav> -->
     </header>
 
     <div class="main-content">
