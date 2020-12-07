@@ -22,16 +22,20 @@ body, .main-content
 {
 	background-image: url(../img/bg_re.jpg);
 	background-repeat: repeat-x;
-  line-height: 55px;
+  line-height: 60px;
 }
 .navbar{
   padding: 0 !important;
 }
 .logo{
-  padding-top: 2px;
+  padding-top: 3px;
 }
-.nav-link{
-  padding-left: 1rem !important
+.menu-links{
+  margin-top: 0.35rem;
+}
+.links{
+  padding-left: 2.25rem;
+  padding-right: 0 !important;
 }
 .follow
 {
@@ -41,7 +45,7 @@ body, .main-content
 	vertical-align: middle;
 	letter-spacing: 0.2px;
 	font-size: 13px;
-	padding-top: 18px;
+	padding-top: 16px;
 	font-family: 'arial';
 }
 .menus
@@ -57,6 +61,16 @@ body, .main-content
 {
 	font-family: 'Zurich CN BT';
 	color: #D1CAB3 !important;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+.links:hover{
+  text-decoration: none;
+  background-image: url('../img/nav-hover.gif');
+  background-position: center bottom;
+  background-repeat: no-repeat; 
+  color: #fff;
+  padding-bottom: 22px;
 }
 
 
@@ -67,7 +81,9 @@ body, .main-content
       max-width: 1000px !important;
       padding-left: 0px !important;
       padding-right: 0px !important;
+
   }
+
 }
 
 .swiper-container{
@@ -231,9 +247,11 @@ p.blackquote_para:after
 }
 
 
-.para a
-{
-	color:#ada390;
+
+.para a{
+
+	color:#7f6942;
+
 }
 
 
@@ -243,8 +261,9 @@ p.blackquote_para:after
    color: #7f6942;
 }
 
-.para a:visited
-{  
+
+.para a:focus{
+  
    text-decoration:underline;
    color: #FFF;
 }
@@ -268,6 +287,7 @@ footer li
 	text-decoration:none;
 }
 
+
 .copyright_section
 {    
 	font-size: 12px;
@@ -275,3 +295,9 @@ footer li
 	padding-top:11px;
 }	
 
+@media (max-width: 767px){
+  .copyright_section {
+      
+      text-align:center;
+    }
+}

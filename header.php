@@ -71,14 +71,14 @@ $current_page = basename( $_SERVER['REQUEST_URI'] );
             <ul class="navbar-nav ml-auto menu-links mb-2 mb-md-0">
               <?php foreach ($header_menus as $href => $menu) { ?>
                 <li class="nav-item">
-                  <a href="<?php echo $href ?>" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == $href ? 'active' : ''); ?> " ><?php echo $menu; ?></a>
+                  <a href="<?php echo $href ?>" class="links <?php echo (basename($_SERVER['PHP_SELF']) == $href ? 'active' : ''); ?> " ><?php echo $menu; ?></a>
                 </li>
               <?php } ?> 
             </ul>
           </div>
         </nav>
       </div> 
-       
+
     </header>
 
     <div class="main-content">
