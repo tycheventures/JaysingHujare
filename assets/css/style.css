@@ -68,7 +68,7 @@ body, .main-content
 
 
 .heading
-{                   /*border-bottom:inset;*/
+{   
     background-repeat: repeat-x;
     background-position: center bottom;
     padding-bottom: 7px;
@@ -201,5 +201,5 @@ footer li
 	font-size: 12px;
 	color: #7f6942;
 	padding-top:11px;
-}
+}	
 
