@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Zurich CN BT';
-    src: url('../fonts/zurich-cn-bt-bold-webfont.woff2') format('woff2'),
-         url('../fonts/zurich-cn-bt-bold-webfont.woff') format('woff');
+    src: url('../font/zurich-cn-bt-bold-webfont.woff2') format('woff2'),
+         url('../font/zurich-cn-bt-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
