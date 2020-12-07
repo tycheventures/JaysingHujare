@@ -23,7 +23,8 @@ $menus = array(
 
 $current_page = basename( $_SERVER['REQUEST_URI'] );
 ?>
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -50,8 +51,10 @@ $current_page = basename( $_SERVER['REQUEST_URI'] );
 
   </head>
 
-  <body> 
+  <body>
+ 
     <header class="header">
+        
       <div class="container">   
         <nav class="navbar navbar-expand-lg navbar-light">
           <a href="#"><img src="assets/img/logo.png" class="header"></a>
