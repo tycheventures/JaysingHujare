@@ -260,15 +260,15 @@ footer li{
 
 .copyright_section{
      
-  font-size: 12px;
+    font-size: 12px;
 	color: #7f6942;
 	padding-top:11px;
+	
 }
 
 @media (max-width: 767px){
   .copyright_section {
       
-      padding-left:80px;
-     
-}
+      text-align:center;
+    }
 }
