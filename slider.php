@@ -9,8 +9,8 @@
 
  
     
-        <div class="swiper-container mb-4 shadow" style="border: 10px solid white;">
-            <div class="swiper-wrapper ">
+        <div class="swiper-container mb-4 " style="border: 10px solid white;box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);">
+            <div class="swiper-wrapper">
 <?php
         
           foreach($images as $image) 
