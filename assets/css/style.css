@@ -217,7 +217,7 @@ padding-top:23px;
    color: #7f6942;
 }
 
-.para a:visited{
+.para a:focus{
   
    text-decoration:underline;
    color: #FFF;
