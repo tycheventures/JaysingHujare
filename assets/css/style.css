@@ -1,7 +1,11 @@
 @font-face {
     font-family: 'Zurich CN BT';
-    src: url('../fonts/zurich-cn-bt-bold-webfont.woff2') format('woff2'),
-         url('../fonts/zurich-cn-bt-bold-webfont.woff') format('woff');
+    src: url('../fonts/zurich-cn-bt.eot');
+    src: url('../fonts/zurich-cn-bt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/zurich-cn-bt.woff2') format('woff2'),
+         url('../fonts/zurich-cn-bt.woff') format('woff'),
+         url('../fonts/zurich-cn-bt.ttf') format('truetype'),
+         url('../fonts/zurich-cn-bt.svg#Zurich CN BT') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -15,13 +19,16 @@ body, .main-content{
 .header{
 	background-image: url(../img/bg_re.jpg);
 	background-repeat: repeat-x;
-  line-height: 141px;
+  line-height: 55px;
 }
 .navbar{
   padding: 0 !important;
 }
 .logo{
-  padding-bottom: 15px;
+  padding-top: 2px;
+}
+.nav-link{
+  padding-left: 1rem !important
 }
 .follow{
 	float: right;
@@ -30,7 +37,7 @@ body, .main-content{
 	vertical-align: middle;
 	letter-spacing: 0.2px;
 	font-size: 13px;
-	padding-top: 14px;
+	padding-top: 18px;
 	font-family: 'arial';
 }
 .menus{
@@ -44,8 +51,11 @@ body, .main-content{
 	font-family: 'Zurich CN BT';
 	color: #D1CAB3 !important;
 }
-.collapse{
-	display: fl
+@media (min-width: 1200px){
+  .container {
+      max-width: 1000px !important;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
 }
 
 .swiper-container{
